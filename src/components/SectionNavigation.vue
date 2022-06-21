@@ -1,6 +1,11 @@
 <template>
     <div>
-
+        <div class="row bg-primary">
+            <div v-for="(link, i) in navLinks" :key="i" class="col">
+                <img :src="require(`${link.img}`)" :alt="link.src">
+                <p>{{ link.text }}</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -11,29 +16,29 @@ export default {
         return {
             navLinks: [
                 {
-                    img:"../assets/img/buy-comics-digital-comics.png",
+                    img:"../src/assets/img/buy-comics-digital-comics.png",
                     src:"DC Digital Comics",
                     text:"Digital Comics"
                 },
                 {
-                    img:"../assets/img/buy-comics-merchandise.png",
+                    img:"../../src/assets/img/buy-comics-merchandise.png",
                     src:"DC Merchandise",
                     text:"DC Merchandise"
                 },
                 {
-                    img:"../assets/img/buy-comics-subscriptions.png",
-                    src:"DC Digital Comics",
-                    text:"Digital Comics"
+                    img:"../../src/assets/img/buy-comics-subscriptions.png",
+                    src:"DC Subscription",
+                    text:"Subscription"
                 },
                 {
-                    img:"../assets/img/dc-logo-bg.png",
-                    src:"DC Digital Comics",
-                    text:"Digital Comics"
+                    img:"../../src/assets/img/dc-logo-bg.png",
+                    src:"DC Shop Locator",
+                    text:"Comic Shop Locator"
                 },
                 {
-                    img:"../assets/img/buy-dc-power-visa.svg",
-                    src:"DC Digital Comics",
-                    text:"Digital Comics"
+                    img:"../../src/assets/img/buy-dc-power-visa.svg",
+                    src:"DC Visa",
+                    text:"Dc Power Visa"
                 },
             ]
         }
