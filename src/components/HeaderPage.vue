@@ -65,6 +65,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/scss/MainStyle.scss";
 @import "../assets/scss/HeaderStyles.scss";
 
 </style>

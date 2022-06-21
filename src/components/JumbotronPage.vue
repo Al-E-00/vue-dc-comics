@@ -1,5 +1,10 @@
 <template>
-    <h5> `--> Content goes here <--` </h5>
+    <div>
+        <div class="main-jumbotron">
+            <h5> --&gt; Content goes here &lt;-- </h5>
+
+        </div>
+    </div>
 </template>
 
 <script>
@@ -9,4 +14,6 @@ export default {
 </script>
 
 <style>
+@import "../assets/scss/MainStyle.scss";
+@import "../assets/scss/JumbotronStyles.scss";
 </style>
