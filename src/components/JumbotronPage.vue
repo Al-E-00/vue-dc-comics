@@ -13,7 +13,13 @@ export default {
 }
 </script>
 
-<style>
-@import "../assets/scss/MainStyle.scss";
-@import "../assets/scss/JumbotronStyles.scss";
+<style language="scss">
+
+.main-jumbotron {
+    background-color: black;
+    padding: 2rem 8rem;
+    h5 {
+        color: white;
+    }
+}
 </style>
