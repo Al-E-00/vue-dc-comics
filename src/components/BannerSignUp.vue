@@ -2,6 +2,7 @@
     <div>
         <div class="container-fluid">
             <div class="row bg-secondary custom-style-banner">
+
                 <div class="col ">
                     <button class="btn btn-outline-primary text-uppercase button-custom-style">Sign Up Now!</button>
                 </div>
@@ -25,5 +26,5 @@ name:"BannerSignUp",
 </script>
 
 <style lang="scss" >
-@import "../assets/scss/BannerSignUp.scss";
+    @import "../assets/scss/BannerSignUp.scss";
 </style>

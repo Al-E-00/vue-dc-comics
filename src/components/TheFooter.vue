@@ -2,6 +2,7 @@
     <div>
         <div class="container-fluid">
             <div class="row background-the-footer">
+                <div class="background-the-footer-second-layer"></div>
                 <div class="col-2">
                     <ul>
                         <h3 class="text-uppercase">Dc Comics</h3>
@@ -31,10 +32,6 @@
                             <a href="#">{{ name.name }}</a>
                         </li>
                     </ul>
-                </div>
-
-                <div class="col-6 ps-5 d-flex justify-content-end">
-                    <img src="img/dc-logo-bg.png" alt="Dc logo big">
                 </div>
         </div>
     </div>

@@ -1,11 +1,27 @@
 
+.background-the-footer-second-layer {
+    background-image: url('/public/img/dc-logo-bg.png');
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -25px;
+    bottom: 0;
+    left: 60%;
+    transform: scale(1.1);
+}
 
 .background-the-footer{
     background-image:  url('/public/img/footer-bg.jpg');
+    position: relative;
     padding: 0 8rem;
-
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
     ul {
+        
         padding: 3rem 0;
         color: white;
         li{
