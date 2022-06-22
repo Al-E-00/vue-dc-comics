@@ -1,8 +1,16 @@
 .main-jumbotron {
-    background-color: black;
-    padding: 2rem 8rem;
+    background-color: rgb(28, 28, 28);
+    padding-top: 2rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    padding-bottom: 3rem;
 
     h5 {
         color: white;
     }
+}
+
+.custom-height-jumbotron-img {
+    max-height: 300px;
+    overflow: hidden;
 }
