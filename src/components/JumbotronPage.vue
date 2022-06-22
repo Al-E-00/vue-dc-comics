@@ -14,8 +14,9 @@
                 :series="card.series" 
                 :type="card.type" />
             </div>
-
-
+            <div class="banner-custom-load-more bg-primary">
+                <h5 class="text-uppercase m-0">Load More</h5>
+            </div>
         </div>
     </div>
 </template>
@@ -111,14 +112,27 @@ export default {
 .banner-custom {
     position: absolute;
     max-width: 10rem;
-    overflow: hidden;
     font-size: 1.8rem;
     padding: .8rem .2rem;
     left: 8rem;
-    top: -4%;
+    top: -5%;
     h5{
         font-weight: 700;
+        font-size: 1.3rem;
     }
+}
 
+.banner-custom-load-more{
+    position: absolute;
+    max-width: 10rem;
+    padding: .6rem .2rem;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    h5{
+        font-size: .8rem;
+        font-weight: 500;
+        text-align: center;
+    }
 }
 </style>
