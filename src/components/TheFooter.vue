@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="col-6 ps-5 d-flex justify-content-end">
-                    <img src="/img/dc-logo-bg.png" alt="Dc logo big">
+                    <img src="img/dc-logo-bg.png" alt="Dc logo big">
                 </div>
         </div>
     </div>
