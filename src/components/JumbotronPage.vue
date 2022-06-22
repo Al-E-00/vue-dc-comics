@@ -1,9 +1,12 @@
 <template>
     <div>
-        <div class="row custom-height-jumbotron-img">
+        <div class="row custom-height-jumbotron-img ">
             <img src="img/jumbotron.jpg" alt="">
         </div>
-        <div class="row row-cols-6 main-jumbotron ">
+        <div class="row row-cols-6 main-jumbotron">
+            <div class="banner-custom bg-primary">
+                <h5 class="text-uppercase m-0">Current series</h5>
+            </div>
             <div class="col g-3 p-0 d-flex justify-content-center" v-for="(card, i) in CardTemplateVue" :key="i">
                 <CardTemplate 
                 :thumb="card.thumb" 
@@ -104,4 +107,18 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/JumbotronStyles.scss";
+
+.banner-custom {
+    position: absolute;
+    max-width: 10rem;
+    overflow: hidden;
+    font-size: 1.8rem;
+    padding: .8rem .2rem;
+    left: 8rem;
+    top: -4%;
+    h5{
+        font-weight: 700;
+    }
+
+}
 </style>
