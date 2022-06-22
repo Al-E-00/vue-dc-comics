@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="d-flex justify-content-between custom-nav-style">
-            <img class="logo-image-navbar" src="../assets/img/dc-logo.png" alt="Logo DC">
+            <img class="logo-image-navbar" src="./img/dc-logo.png" alt="Logo DC">
             <ul class="d-flex gap-4 m-0 list-unstyled align-items-center">
                 <li v-for="(links, i) in navLinks" :key="i">
                     <a class="links-navbar text-dark" :href="links.href">{{ links.name.toUpperCase() }}</a>

@@ -1,10 +1,13 @@
 <template>
     <div>
-        <div class="row bg-primary">
-            <div v-for="(link, i) in navLinks" :key="i" class="col">
-                <img :src="require(`${link.img}`)" :alt="link.src">
-                <p>{{ link.text }}</p>
+        <div class="container-fluid">
+            <div class="row bg-primary custom-navlinks-section gap-4">
+                <div v-for="(link, i) in navLinks" :key="i" class="col d-flex align-items-center">
+                    <img class="img-custom-navlinks" :src='require("../assets/" + link.img)' alt="img">
+                    <p class="m-0 text-white">{{ link.text.toUpperCase() }}</p>
+                </div>
             </div>
+
         </div>
     </div>
 </template>
@@ -16,27 +19,27 @@ export default {
         return {
             navLinks: [
                 {
-                    img:"../src/assets/img/buy-comics-digital-comics.png",
+                    img:"img_nav_banner_blu/buy-comics-digital-comics.png",
                     src:"DC Digital Comics",
                     text:"Digital Comics"
                 },
                 {
-                    img:"../../src/assets/img/buy-comics-merchandise.png",
+                    img:"img_nav_banner_blu/buy-comics-merchandise.png",
                     src:"DC Merchandise",
                     text:"DC Merchandise"
                 },
                 {
-                    img:"../../src/assets/img/buy-comics-subscriptions.png",
+                    img:"img_nav_banner_blu/buy-comics-subscriptions.png",
                     src:"DC Subscription",
                     text:"Subscription"
                 },
                 {
-                    img:"../../src/assets/img/dc-logo-bg.png",
+                    img:"img_nav_banner_blu/buy-comics-shop-locator.png",
                     src:"DC Shop Locator",
                     text:"Comic Shop Locator"
                 },
                 {
-                    img:"../../src/assets/img/buy-dc-power-visa.svg",
+                    img:"img_nav_banner_blu/buy-dc-power-visa.svg",
                     src:"DC Visa",
                     text:"Dc Power Visa"
                 },
@@ -46,6 +49,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @import "../assets/scss/SectionNavigation.scss";
 </style>
