@@ -5,16 +5,17 @@
     font-weight: 500;
     color: black;
     padding: 2rem .1rem;
-    transition: border .2s ease-in-out, color .2s ease-in-out;
+    transition: color .2s ease-in-out, border .2s ease-in-out;
+    border-bottom: 5px solid transparent;
 
     &:hover{
-        border-bottom: 4px solid #0a58ca;
+        border-bottom: 5px solid #0a58ca;
         padding-bottom: 2rem;
     }
     
     &.active {
         color:rgb(2, 130, 249);
-        border-bottom: 4px solid rgb(2, 130, 249);
+        border-bottom: 5px solid rgb(2, 130, 249);
         padding-bottom: 2rem;
     }
 }
