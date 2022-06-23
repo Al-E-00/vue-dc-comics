@@ -130,11 +130,16 @@ export default {
 
 .banner-custom-load-more{
     position: absolute;
+    cursor: pointer;
     max-width: 10rem;
     padding: .6rem .2rem;
     left: 50%;
     bottom: 2%;
     transform: translateX(-50%);
+
+    &:hover{
+        background-color: darken(rgb(13, 110, 253), 10%) !important;
+    }
     h5{
         font-size: .8rem;
         font-weight: 500;
