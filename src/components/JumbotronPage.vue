@@ -1,7 +1,8 @@
 <template>
     <div>
         <div class="row background-jumbotron"
-        :style="{'backgroundImage': 'url(' + currentImg + ')',}
+        :style="{'backgroundImage': 'url(' + currentImg + ')',
+        'backgroundSize': 'currentBackgroundSize',}
         ">
         </div>
         <div class="row row-cols-6 main-jumbotron">
@@ -26,6 +27,7 @@
 import CardTemplate from './CardTemplate.vue';
 export default {
     name: "JumbotronePage",
+    currentBackgroundSize: "cover",
     data() {
         return {
             currentImg: "/img/jumbotron.jpg",
@@ -108,7 +110,7 @@ export default {
     methods: {
         clickedCard(index) {
             this.currentImg = this.CardTemplateVue[index].thumb;
-            return console.log(this.currentImg);
+            this.currentBackgroundSize = "contain";
         }
     }
 }
