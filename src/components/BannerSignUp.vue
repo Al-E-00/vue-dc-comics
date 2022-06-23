@@ -25,6 +25,8 @@ name:"BannerSignUp",
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss">
     @import "../assets/scss/BannerSignUp.scss";
+
+    
 </style>
