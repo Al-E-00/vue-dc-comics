@@ -1,7 +1,6 @@
 <template>
     <div>
-        <div class="row custom-height-jumbotron-img ">
-            <img src="img/jumbotron.jpg" alt="">
+        <div class="row container-jumbotron-img">
         </div>
         <div class="row row-cols-6 main-jumbotron">
             <div class="banner-custom bg-primary">

@@ -15,7 +15,7 @@
     }
 }
 
-.custom-height-jumbotron-img {
-    max-height: 300px;
-    overflow: hidden;
+.container-jumbotron-img {
+    background-image: url("/public/img/jumbotron.jpg");
+    min-height: 400px;
 }
