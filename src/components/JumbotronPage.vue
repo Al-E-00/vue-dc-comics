@@ -1,7 +1,8 @@
 <template>
     <div>
         <div class="row background-jumbotron"
-        :style="{'backgroundImage': 'url(' + currentImg + ')'}">
+        :style="{'backgroundImage': 'url(' + currentImg + ')',}
+        ">
         </div>
         <div class="row row-cols-6 main-jumbotron">
             <div class="banner-custom bg-primary">
