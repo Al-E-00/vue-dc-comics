@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div class="row container-jumbotron-img">
+        <div class="row background-jumbotron">
         </div>
         <div class="row row-cols-6 main-jumbotron">
             <div class="banner-custom bg-primary">
                 <h5 class="text-uppercase m-0">Current series</h5>
             </div>
-            <div class="col g-3 p-0 d-flex justify-content-center" v-for="(card, i) in CardTemplateVue" :key="i">
+            <div class="col g-3 p-0 d-flex justify-content-center" v-for="(card, i) in CardTemplateVue" :key="i" @click="clickedCard(i)">
                 <CardTemplate 
                 :thumb="card.thumb" 
                 :price="card.price" 
@@ -26,6 +26,7 @@ export default {
     name: "JumbotronePage",
     data() {
         return {
+            currentImg: "/public/img/jumbotron.jpg",
             CardTemplateVue: [
                 {
                     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
@@ -101,7 +102,13 @@ export default {
                 }]
         }
     },
-    components: { CardTemplate }
+    components: { CardTemplate },
+    methods: {
+        clickedCard(index) {
+            this.currentImg = this.CardTemplateVue[index].thumb;
+            return console.log(this.currentImg);
+        }
+    }
 }
 </script>
 

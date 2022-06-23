@@ -21,8 +21,10 @@ export default {
         type: String,
     },
     data() {
-        return{}
-    }
+        return{
+        }
+    },
+
 }
 </script>
 

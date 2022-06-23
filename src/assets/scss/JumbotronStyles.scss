@@ -15,7 +15,8 @@
     }
 }
 
-.container-jumbotron-img {
+.background-jumbotron  {
     background-image: url("/public/img/jumbotron.jpg");
-    min-height: 400px;
+    background-size: cover;
+    min-height: 300px;
 }
